@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlexBox Display</title>
+  <style>
+    body {
+      background-color: #2e3145;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons div {
+      background-color: red;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .images img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .title {
+      background-color: black;
+      padding: 15px 30px;
+      border-radius: 25px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .text-boxes {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .text-box {
+      background-color: red;
+      border-radius: 30px;
+      padding: 20px;
+      width: 300px;
+    }
+
+    .text-box-inner {
+      background-color: lime;
+      color: black;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="buttons">
+      <div>Display:flex;</div>
+      <div>Display:none;</div>
+      <div>Display:block;</div>
+      <div>Display:inline;</div>
+    </div>
+
+    <div class="images">
+      <img src="https://img-c.udemycdn.com/course/750x422/1727766_3342.jpg" alt="" width="50" height="150">
+      <iframe width="250" height="200" src="https://www.youtube.com/embed/fYq5PXgSsbE" title="Learn Flexbox in 15 Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="title">FlexBox</div>
+
+    <div class="text-boxes">
+      <div class="text-box">
+        <div class="text-box-inner">
+          CSS Flexbox — это технология для создания сложных гибких макетов за счёт правильного размещения элементов на странице.
+        </div>
+      </div>
+      <div class="text-box">
+        <div class="text-box-inner">
+          Flexbox, web-dizayn jarayonini sodda qiladi va elementlarni dinamik tarzda joylashuvini boshqarishga yordam beradi. Bu esa web sayt yoki ilovalarning yaratilishi va ularga moslashtirilishi jarayonini yengillashtiradi.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
